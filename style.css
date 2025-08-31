@@ -735,11 +735,6 @@ img {
     margin: 0 auto;
 }
 
-.footer__logo img {
-    width: 100px;
-    /* подберите размер логотипа */
-    height: auto;
-}
 
 .footer__info {
     display: flex;
@@ -747,7 +742,6 @@ img {
 }
 
 .footer__title {
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
@@ -758,7 +752,6 @@ img {
 }
 
 .footer__text {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;

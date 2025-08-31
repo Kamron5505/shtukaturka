@@ -12,3 +12,8 @@ const swiper = new Swiper(".portfolio__row", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+AOS.init({
+  duration: 1000, // Длительность анимации в мс
+  once: true, // Анимация срабатывает один раз
+});

@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Механизированная штукатурка</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <!-- HEADER -->
+    <header class="header" data-aos="fade-down">
         <div class="container">
             <div class="header__left">
                 <a href="./index.html" class="header__logo">
-                    <img src="./images/icons/logo.svg" alt="" class="header__logo-img">
+                    <img src="./images/icons/logo.svg" alt="Логотип" class="header__logo-img">
                 </a>
                 <nav class="nav">
                     <ul class="header__list">
-                        <li class="header__item"><a class="header__link" href="#!">О нас</a></li>
-                        <li class="header__item"><a class="header__link" href="#!">Портфолио</a></li>
-                        <li class="header__item"><a class="header__link" href="#!">Этапы</a></li>
-                        <li class="header__item"><a class="header__link" href="#!">Отзывы</a></li>
-                        <li class="header__item"><a class="header__link" href="#!">Статьи</a></li>
+                        <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
+                        <li class="header__item"><a class="header__link" href="#portfolio">Портфолио</a></li>
+                        <li class="header__item"><a class="header__link" href="#step">Этапы</a></li>
+                        <li class="header__item"><a class="header__link" href="#review">Отзывы</a></li>
+                        <li class="header__item"><a class="header__link" href="#work">Статьи</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="callback">
+            <div class="callback" data-aos="fade-left">
                 <div class="callback__info">
                     <div class="callback__phone">
                         <span class="callback__phone-icon">
@@ -45,21 +46,25 @@
             </div>
         </div>
     </header>
+
+    <!-- MAIN -->
     <main class="main">
-        <section class="welcome">
+        <!-- WELCOME -->
+        <section class="welcome" data-aos="fade-up">
             <div class="container">
-                <h2 class="welcome__title">Механизированная
-                    штукатурка стен</h2>
+                <h2 class="welcome__title">Механизированная штукатурка стен</h2>
                 <h4 class="welcome__subtitle">в Астрахане и Астраханской области</h4>
                 <span class="welcome__price">от 350 руб/м²</span>
                 <a href="#mini" class="welcome__btn">Рассчитать стоимость</a>
             </div>
         </section>
-        <section class="steps">
+
+        <!-- STEPS -->
+        <section id="step" class="steps" data-aos="fade-up">
             <div class="container">
                 <h2 class="steps__heading">Заказать работы - <span class="steps__heading--highlight">ПРОСТО!</span></h2>
                 <div class="steps__content">
-                    <div class="steps__item steps__item--active">
+                    <div class="steps__item steps__item--active" data-aos="fade-right" data-aos-delay="100">
                         <div class="steps__item-inner">
                             <div class="steps__icon-wrapper">
                                 <span class="steps__icon">1</span>
@@ -67,16 +72,14 @@
                             <div class="steps__text-wrapper">
                                 <h3 class="steps__title">Оставьте заявку</h3>
                                 <p style="width: 205px;" class="steps__description">
-                                    Оставляете заявку на
-                                    замер по телефону или по
-                                    форме обратной связи
+                                    Оставляете заявку на замер по телефону или по форме обратной связи
                                 </p>
                             </div>
                         </div>
                         <a href="#" class="steps__button">Заполнить заявку!</a>
                     </div>
 
-                    <div class="steps__item">
+                    <div class="steps__item" data-aos="fade-right" data-aos-delay="200">
                         <div class="steps__item-inner">
                             <div class="steps__icon-wrapper">
                                 <span class="steps__icon">2</span>
@@ -84,13 +87,12 @@
                             <div class="steps__text-wrapper">
                                 <h3 class="steps__title">Мы позвоним</h3>
                                 <p style="width: 141px;" class="steps__description">Наш специалист свяжется с вами и
-                                    обсудит все необходимые
-                                    вопросы</p>
+                                    обсудит все необходимые вопросы</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="steps__item">
+                    <div class="steps__item" data-aos="fade-right" data-aos-delay="300">
                         <div class="steps__item-inner">
                             <div class="steps__icon-wrapper">
                                 <span class="steps__icon">3</span>
@@ -105,7 +107,7 @@
                         </div>
                     </div>
 
-                    <div class="steps__item">
+                    <div class="steps__item" data-aos="fade-right" data-aos-delay="400">
                         <div class="steps__item-inner">
                             <div class="steps__icon-wrapper">
                                 <span class="steps__icon">4</span>
@@ -113,13 +115,12 @@
                             <div class="steps__text-wrapper">
                                 <h3 class="steps__title">Заключаем договор</h3>
                                 <p style="width: 166px;" class="steps__description">Указываем перечень работ, сроки,
-                                    стоимость и порядок
-                                    оплаты</p>
+                                    стоимость и порядок оплаты</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="steps__item">
+                    <div class="steps__item" data-aos="fade-right" data-aos-delay="500">
                         <div class="steps__item-inner">
                             <div class="steps__icon-wrapper">
                                 <span class="steps__icon">5</span>
@@ -127,34 +128,31 @@
                             <div class="steps__text-wrapper">
                                 <h3 class="steps__title">Выполняем работы</h3>
                                 <p style="width: 217px;" class="steps__description">Выполняем и сдаем работу, а вы
-                                    принимаете результат и
-                                    оплачиваете</p>
+                                    принимаете результат и оплачиваете</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="benefits-section">
+
+        <!-- BENEFITS -->
+        <section class="benefits-section" data-aos="fade-up">
             <div class="container">
                 <div class="benefit-main">
                     <h2 class="benefit-title">Преимущества</h2>
                     <p class="benefit-description">
-                        Конечно самым главным преимуществом является
-                        цена, так как вы в первую очередь экономите на
-                        материале. Так как механическая штукатурка
-                        дешевле, чем ручная и расход у механической
+                        Конечно самым главным преимуществом является цена, так как вы в первую очередь экономите на
+                        материале. Так как механическая штукатурка дешевле, чем ручная и расход у механической
                         штукатурки меньше, чем у ручной
                     </p>
                     <a href="#" class="consultation-button">Получить консультацию!</a>
                 </div>
                 <div class="line-big"></div>
                 <div class="benefits-grid">
-                    <div class="benefit-item">
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon-wrapper">
-                            <span class="icon">
-                                <img src="./images/benefits/fast.svg" alt="">
-                            </span>
+                            <span class="icon"><img src="./images/benefits/fast.svg" alt=""></span>
                         </div>
                         <div class="text-content">
                             <h3 class="item-title">Быстро!</h3>
@@ -162,11 +160,9 @@
                                 приступить к работе</p>
                         </div>
                     </div>
-                    <div class="benefit-item">
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon-wrapper">
-                            <span class="icon">
-                                <img src="./images/benefits/money.svg" alt="">
-                            </span>
+                            <span class="icon"><img src="./images/benefits/money.svg" alt=""></span>
                         </div>
                         <div class="text-content">
                             <h3 class="item-title">Недорого!</h3>
@@ -174,24 +170,20 @@
                                 несколько раз быстрее и вам не приходится платить за лишние часы при ручной работе</p>
                         </div>
                     </div>
-                    <div class="benefit-item">
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon-wrapper">
-                            <span class="icon">
-                                <img src="./images/benefits/high-quality.svg" alt="">
-                            </span>
+                            <span class="icon"><img src="./images/benefits/high-quality.svg" alt=""></span>
                         </div>
                         <div class="text-content">
                             <h3 class="item-title">Качественно!</h3>
                             <p class="item-description">Раствор, который подготовлен машиной, отличается лучшим
-                                качеством.
-                                Смесь подается под давлением, следовательно, улучшается сцепление состава со стеной.</p>
+                                качеством. Смесь подается под давлением, следовательно, улучшается сцепление состава со
+                                стеной.</p>
                         </div>
                     </div>
-                    <div class="benefit-item">
+                    <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon-wrapper">
-                            <span class="icon">
-                                <img src="./images/benefits/ecological.svg" alt="">
-                            </span>
+                            <span class="icon"><img src="./images/benefits/ecological.svg" alt=""></span>
                         </div>
                         <div class="text-content">
                             <h3 class="item-title">Экологично!</h3>
@@ -202,22 +194,19 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio-section">
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="portfolio-section" data-aos="fade-up">
             <div class="container">
                 <h2 class="portfolio__title">Наши работы</h2>
-
-                <!-- Swiper -->
                 <div class="swiper portfolio__row">
                     <div class="swiper-wrapper">
-                        <!-- Слайды -->
                         <div class="swiper-slide"><img src="./images/portfolio/portfolio-1.png" alt="Работа 1"></div>
                         <div class="swiper-slide"><img src="./images/portfolio/portfolio-2.png" alt="Работа 2"></div>
                         <div class="swiper-slide"><img src="./images/portfolio/portfolio-3.png" alt="Работа 3"></div>
                         <div class="swiper-slide"><img src="./images/portfolio/portfolio-4.png" alt="Работа 4"></div>
                         <div class="swiper-slide"><img src="./images/portfolio/portfolio-5.png" alt="Работа 5"></div>
                     </div>
-
-                    <!-- Навигация -->
                     <div class="swiper-button-prev">
                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -226,95 +215,91 @@
                         </svg>
                     </div>
                     <div class="swiper-button-next">
-                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            style="transform: rotate(180deg);">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M14 18.0502L12.66 19.4502L4 10.4502L12.66 1.4502L14 2.8502L6.65 10.4502L14 18.0502Z"
+                                d="M6 2.85019L7.34 1.4502L16 10.4502L7.34 19.4502L6 18.0502L13.35 10.4502L6 2.85019Z"
                                 fill="white" />
                         </svg>
                     </div>
-
-                    <!-- Пагинация -->
                     <div style="display: none;" class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
-        <section class="about">
+
+        <!-- ABOUT -->
+        <section id="about" class="about" data-aos="fade-up">
             <div class="container">
                 <div class="about__inner-wrapper">
                     <h3 class="about__title">О нас</h3>
                     <p class="about__desc">На протяжении 11 лет мы работаем в сфере строительства и ремонта любых
-                        объектов
-                        недвижимости.
-                        Наши мастера повседневно повышают свой опыт и мастерство. За долгие годы работы мы изучили все
-                        необходимые тонкости в механической штукатурке любых поверхностей стен, потолков или пола. И с
-                        лёгкостью решаем поставленные перед нами задачи.</p>
+                        объектов недвижимости. Наши мастера повседневно повышают свой опыт и мастерство. За долгие годы
+                        работы мы изучили все необходимые тонкости в механической штукатурке любых поверхностей стен,
+                        потолков или пола. И с лёгкостью решаем поставленные перед нами задачи.</p>
                     <a href="#" class="about__btn">Вызвать мастера!</a>
                 </div>
             </div>
         </section>
-        <section class="reviews-section">
+
+        <!-- REVIEWS -->
+        <section id="review" class="reviews-section" data-aos="fade-up">
             <div class="container">
                 <h2>Отзывы наших клиентов</h2>
                 <div class="reviews-container">
-                    <div class="review-card">
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="review-content">
                             <p>"Я остался очень доволен работой компании. Штукатурка выполнена быстро и качественно,
-                                стены
-                                выглядят идеально. Рекомендую всем, кто ищет надежного исполнителя!"</p>
+                                стены выглядят идеально. Рекомендую всем, кто ищет надежного исполнителя!"</p>
                         </div>
                         <div class="reviewer-info">
-                            <img src="./avatars/avatar-1.png" alt="Аватар Александра Петрова" class="reviewer-avatar">
+                            <img src="./avatars/avatar-1.png" alt="Александр Петров" class="reviewer-avatar">
                             <span>Александр Петров</span>
                         </div>
                     </div>
-                    <div class="review-card">
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="review-content">
                             <p>"Отличное качество и доступные цены! Команда профессионалов выполнила работу в срок, и я
                                 осталась очень довольна результатом. Рекомендую всем!"</p>
                         </div>
                         <div class="reviewer-info">
-                            <img src="./avatars/avatar-2.png" alt="Аватар Марии Ивановой" class="reviewer-avatar">
+                            <img src="./avatars/avatar-2.png" alt="Мария Иванова" class="reviewer-avatar">
                             <span>Мария Иванова</span>
                         </div>
                     </div>
-                    <div class="review-card">
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="review-content">
                             <p>"Профессиональный подход и отличное качество! Работы были выполнены аккуратно, а процесс
-                                был
-                                очень удобным благодаря бесплатным замерам и консультациям."</p>
+                                был очень удобным благодаря бесплатным замерам и консультациям."</p>
                         </div>
                         <div class="reviewer-info">
-                            <img src="./avatars/avatar-3.png" alt="Аватар Дмитрия Смирнова" class="reviewer-avatar">
+                            <img src="./avatars/avatar-3.png" alt="Дмитрий Смирнов" class="reviewer-avatar">
                             <span>Дмитрий Смирнов</span>
                         </div>
                     </div>
-                    <div class="review-card">
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="review-content">
                             <p>"Работа выполнена на высшем уровне! Очень рад, что выбрал именно эту компанию. Все
-                                сделали
-                                быстро и качественно."</p>
+                                сделали быстро и качественно."</p>
                         </div>
                         <div class="reviewer-info">
-                            <img src="./avatars/avatar-4.png" alt="Аватар Елены Кузнецовой" class="reviewer-avatar">
+                            <img src="./avatars/avatar-4.png" alt="Елена Кузнецова" class="reviewer-avatar">
                             <span>Елена Кузнецова</span>
                         </div>
                     </div>
                 </div>
-                <div class="contact-info">
+
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="500">
                     <h2>Оцените нашу работу</h2>
                     <p>Ваше мнение важно для нас</p>
                     <button class="call-button"
-                        onclick="window.open('https://www.avito.ru/astrahan/predlozheniya_uslug/mehanizirovannaya_shtukaturka_pod_oboi_2126020790?utm_campaign=native&amp;utm_medium=item_page_android&amp;utm_source=soc_sharing')">
-                        Дайте свою оценку
-                    </button>
+                        onclick="window.open('https://www.avito.ru/astrahan/predlozheniya_uslug/mehanizirovannaya_shtukaturka_pod_oboi_2126020790')">Дайте
+                        свою оценку</button>
                 </div>
-                <div id="mini" class="mini-section">
+
+                <div id="mini" class="mini-section" data-aos="fade-up" data-aos-delay="600">
                     <div class="container">
                         <div class="call-div">
                             <div class="call__content">
-                                <h5 class="call__title">Звоните и мы ответим<br>
-                                    на все ваши вопросы</h5>
+                                <h5 class="call__title">Звоните и мы ответим<br> на все ваши вопросы</h5>
                                 <a class="call__phone-number" href="tel:+79310098295">+7 931 009 82 95</a>
                             </div>
                             <a href="tel:+79310098295" class="call__btn">Звоните!</a>
@@ -322,27 +307,26 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="video-section">
+        <!-- VIDEO -->
+        <section id="work" class="video-section" data-aos="fade-up">
             <div class="container">
                 <h2 class="video-section__title">С нами проще</h2>
-                <p class="video-section__subtitle">
-                    Узнайте, почему клиенты доверяют нам свои задачи
-                </p>
-
+                <p class="video-section__subtitle">Узнайте, почему клиенты доверяют нам свои задачи</p>
                 <div class="video-section__iframe">
                     <iframe src="https://www.youtube.com/embed/lrbQkwMG5V8"
                         title="Штукатурка стен под обои без дополнительного шпатлевания! Астрахань. Serta Madter Next"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+                        allowfullscreen></iframe>
                 </div>
             </div>
+        </section>
     </main>
-    <footer class="footer">
+
+    <!-- FOOTER -->
+    <footer class="footer" data-aos="fade-up">
         <div class="footer__container">
             <div class="footer__logo">
                 <img src="./images/icons/logo.svg" alt="Логотип" />
@@ -361,8 +345,10 @@
         </div>
     </footer>
 
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./sctipt.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
