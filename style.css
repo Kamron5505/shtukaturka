@@ -141,13 +141,14 @@ img {
     cursor: pointer;
 }
 
+
 .welcome {
     padding: 200px 0;
-    background-image: url("./images/welcome-bg.png");
+    background-image: url("./images/welcome-bg.jpeg");
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
-
 
 .welcome__title {
     font-weight: 700;
@@ -268,13 +269,14 @@ img {
     color: #000;
     margin-bottom: 10px;
     margin-top: 25px;
+    text-wrap: nowrap;
 }
 
 .steps__description {
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: #555;
+    color: #060607;
     line-height: 1.5;
     max-width: 250px;
 }
@@ -387,16 +389,11 @@ img {
     max-width: 400px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    flex-direction: column;
 }
 
-.icon-wrapper {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-}
+.icon-wrapper {}
 
 .item-title {
     font-weight: 700;
@@ -412,7 +409,7 @@ img {
     line-height: 150%;
     color: #fff;
     max-width: 257px;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 /* Benfits-section */
