@@ -141,14 +141,17 @@ img {
     cursor: pointer;
 }
 
-
 .welcome {
     padding: 200px 0;
-    background-image: url("./images/welcome-bg.jpeg");
-    background-size: contain;
-    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./images/welcome-bg.jpeg");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
 }
+
+
+
 
 .welcome__title {
     font-weight: 700;
