@@ -8,18 +8,28 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Open Sans", sans-serif;
+}
+
+.page-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
 
 a {
@@ -30,10 +40,8 @@ a {
 
 img {
     max-width: 100%;
-    height: auto;
     display: block;
 }
-
 
 .header {
     background: #727676;
@@ -44,8 +52,9 @@ img {
     z-index: 1000;
 }
 
+
 .container {
-    max-width: 1920px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -236,7 +245,6 @@ img {
     content: '';
     position: absolute;
     top: 40px;
-    /* высота линии (по центру иконок) */
     left: 80px;
     right: 80px;
     height: 3px;
