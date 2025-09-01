@@ -45,7 +45,7 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -56,6 +56,13 @@ img {
     align-items: center;
     justify-content: center;
     gap: 100px;
+}
+
+.steps__description {
+    max-width: 220px;
+    /* ограничение */
+    width: 100%;
+    /* адаптив */
 }
 
 .header__left {
